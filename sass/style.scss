@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+}
+
+.social-icon-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-group{
+    height: 50px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid ;
+    border-radius: 10px;
+    border-color: red;
+    // margin-top: 250px;
+    // margin-left: 450px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: width 1s ease;
+}
+.icon-group:hover{
+    width: 175px;
+    justify-content: space-around;
+}
+.icon-group .icon-txt{
+    width: 0;
+    overflow: hidden;
+}
+.icon-group:hover .icon-txt{
+    width: fit-content;
+    transition: width 1s ease;
+}
+.icon-group .icon-bg{
+    position: absolute;
+    clip-path: circle(50% at -110% 60%);
+}
